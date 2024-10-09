@@ -59,7 +59,7 @@
     function showDivs(n) {
         var i;
  
-        // acá define qué elemento entra en el slider
+       
         var x = document.getElementsByClassName("slide1");
         if (n > x.length) {slideIndex = 1}
         if (n < 1) {slideIndex = x.length} ;
@@ -179,16 +179,43 @@ Ya sea que busques un diseño tradicional, contemporáneo o completamente origin
 	
 	</section>
 	
-	<section id="pediturno">
+	<section id="pedíturno">
 	
 		<h1> Reservá tu turno cargando el formulario a continuación </h1>
+		
+        <section class="brand-info">
+       
+			<form method="post" action="respuesta.html">
+            <p><strong>Nombre:</strong>
+				<input type="text" name="Nombre" required placeholder=" Nombre y apellido/s"> </p>
+				
+				<p><strong>Mail:</strong>
+				<input type="email" name="email" required placeholder="Correo electronico"> </p>
+				
+				<p><strong>Pais:</strong>
+					<select name="Pais">
+						<option>seleccione su pais</option>
+						<option value= "ARG">Argentina</option>
+						<option value= "BRA">Brasil</option>
+						<option value= "CHI">Chile</option>
+						<option value= "COL">Colombia</option>
+						<option value= "ECU">Ecuador</option>
+					</select>
+				</p>
+						
+				 <p><strong>Duda:</strong>
+				<input type="text" name="Duda" required placeholder="Dejanos tu duda o comentario"> </p>
+				<p> <input type="submit" name="btnenvio" value="Enviarformulario" class="botonenvio"></p>
+				  </form>
 	
 	</section>
+		
+		
 		<div class="cajacontanuncio">
 
-   <iframe src="anuncio.html"  class= "anuncio" name="marco" frameborder="0" scrolling="no"></iframe>
+   <iframe src= "https://matildebustos.github.io/matildebustoss.github.io/anuncio.html"  class= "anuncio" name="marco" frameborder="0" scrolling="no"></iframe>
 		</div>
-	</main>
+	
 	
 	
 	
@@ -229,10 +256,10 @@ Ya sea que busques un diseño tradicional, contemporáneo o completamente origin
 	<script> 
 		function MiFuncion() {
      	var x = document.getElementById("navegador");
-			if (x.className === " ") {
-			x.className += "responsive";
+			if (x.className === "") {
+			x.className = "responsive";
      } else {
-       x.className = " ";
+       x.className = "";
      }
    }
 	</script>

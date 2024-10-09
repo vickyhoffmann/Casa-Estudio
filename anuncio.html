@@ -15,9 +15,9 @@
         font-family:"Noto Sans";
         font-weight: 800;
         font-style: normal;
-        color: #db0080;
+        color: #FFFFFF;
         width: 40%;
-        font-size: 25px;
+        font-size: 35px;
         margin: 0;
         padding: 5px;
       }
@@ -25,11 +25,11 @@
         display: flex;
         flex-flow: wrap;
         align-items: center;
-        background-color: #A2A2A2;
+        background-color: #232323;
         justify-content: space-around;
       }
       .logo img {
-        height: 80px;
+        height: 100px;
         margin: 5px;
       }
 
@@ -37,37 +37,33 @@
         display: block;
         padding: 10px;
         border-radius: 10px;
-        background-color: #db0080;
+        background-color: #A15317;
         text-decoration: none;
-        color: white;
+        color: #FFFFFF;
       }
 		
 	
   @media (max-width: 727px) {
-        .cajaanuncio {
-          text-align: center;
-          height: 100vh;
-          align-content: center;
-        }
-        .cajaanuncio h2 {
-          font-family: "Noto Sans";
-          font-weight: 800;
-          font-style: normal;
-          color: #db0080;
-          width: 100%;
-          font-size: 35px;
-          margin: 0;
-          padding: 20px 10px;
-          box-sizing: border-box;
-        }
-        .logo img {
-          height: 120px;
-          margin: 5px;
-        }
-        .logo {
-          width: 100%;
-        }
+    .cajaanuncio {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+  }
+  .cajaanuncio h2 {
+    font-size: 20px;
+    width: auto;
+	 padding: 5px;
+  }
+  .logo {
+    width: 20%;
+	 padding-right: 10px;
 	  
+  }
+  .botonanuncio {
+    font-size: 13px;
+  }
 	  
       }
     </style>
