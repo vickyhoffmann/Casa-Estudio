@@ -7,6 +7,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/lightbox.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="Estilos.css">
 </head> 
@@ -98,51 +99,68 @@
 	
 		<h1>Artistas</h1>
     <div class= "cajacontenedora">
-      <div class= "infoartista">
-       	<img src="Imágenes/foto_manu.jpg" class="fotoartistas">
-		 
-		<h2>Manuel</h2>
-        <p class="p3">Co-fundador</p>
-      </div>
 		
       <div>
+		 <a href="manuel.html">
+       	<img src="Imágenes/foto_manu.jpg" class="fotoartistas">
+		  </a>
+		  <h2>Manuel</h2>
+		<p class="p3">Co-fundador</p>
+      </div>
+		
+		
+      <div>
+		  <a href="sabrina.html">
         <img src="Imágenes/foto_sab.jpg" class="fotoartistas">
+			</a>
 		<h2>Sabrina</h2>
         <p class="p3">Co-fundadora</p>
       </div>
 		
       <div>
+		 <a href="popi.html">
        	<img src="Imágenes/foto_popi.jpg" class="fotoartistas">
+		</a>
 		<h2>Popi</h2>
         <p class="p3">Residente</p>
       </div>
 		
 	  <div>
+		  <a href="belen.html">
        	<img src="Imágenes/foto_belu.jpg" class="fotoartistas">
+			</a>
 		<h2>Belén</h2>
         <p class="p3">Residente</p>
       </div>
 		
 		<div>
+			<a href="natasha.html">
        	<img src="Imágenes/foto_natasha.jpg" class="fotoartistas">
+			</a>
 		<h2>Natasha</h2>
         <p class="p3">Residente</p>
       </div>
 		
 		<div>
+			<a href="emiliano.html">
        	<img src="Imágenes/foto_emiliano.jpg" class="fotoartistas">
+			</a>
 		<h2>Emiliano</h2>
         <p class="p3">Residente</p>
       </div>
 		
 		<div>
+			<a href="micaela.html">
        	<img src="Imágenes/foto_mica.jpg" class="fotoartistas">
+			</a>
 		<h2>Micaela</h2>
         <p class="p3">Residente</p>
       </div>
 		
 		<div>
+			<a href="lara.html">
        	<img src="Imágenes/foto_lara.jpg" class="fotoartistas">
+			</a>
 		<h2>Lara</h2>
         <p class="p3">Aprendíz</p>
       </div>
@@ -152,14 +170,25 @@
 	</section>
 	
 	
-	<section id="reservas">
-	
-		<h1> Antes de Reservar</h1>
-		<p class="p2"> ¡Es muy probable que la mayoría de tus dudas ya hayan sido respondidas en nuestras preguntas frecuentes! Por favor, completa este formulario de la mejor manera posible, ya que esta es la información que usaremos para armar el presupuesto y programar la cita.</p>
-			
-        <p class="p2"> Te sugerimos que utilices una regla para medir el tamaño del tatuaje. Puedes colocar tu preferencia de artista, pero recuerda que es posible que el artista que elijas no esté disponible. Si no tienes preferencia, puedes dejarlo abierto a nuestra sugerencia. También te pedimos que adjuntes imágenes de referencias. Ten en cuenta que no hacemos copias de otros tatuajes; ¡Nuestras obras son todas originales y únicas! </p>
-			
-       <p class="p2"> Después de completar y enviar el formulario, nos comunicaremos contigo por correo en 3-5 días. Te llegará un precio estimado, y una sugerencia de día y horario. Si la cita sugerida no te sirve, avísanos e intentaremos encontrar otra opción que se ajuste a tu calendario.</p>
+	<section id="reservas" class="reservas">
+		
+		<h1 class="gris"> Antes de Reservar</h1>
+		
+		<div class="paso">
+		<div class="numero">1</div>
+		<p class="gristexto"> ¡Es muy probable que la mayoría de tus dudas ya hayan sido respondidas en nuestras preguntas frecuentes! Por favor, completa este formulario de la mejor manera posible, ya que esta es la información que usaremos para armar el presupuesto y programar la cita.</p>
+		</div>
+		
+		
+		<div class="paso">
+		<div class="numero">2</div>
+        <p class="gristexto"> Te sugerimos que utilices una regla para medir el tamaño del tatuaje. Puedes colocar tu preferencia de artista, pero recuerda que es posible que el artista que elijas no esté disponible. Si no tienes preferencia, puedes dejarlo abierto a nuestra sugerencia. También te pedimos que adjuntes imágenes de referencias. Ten en cuenta que no hacemos copias de otros tatuajes; ¡Nuestras obras son todas originales y únicas! </p>
+		</div>
+		
+		<div class="paso">
+		<div class="numero">3</div>
+       <p class="gristexto"> Después de completar y enviar el formulario, nos comunicaremos contigo por correo en 3-5 días. Te llegará un precio estimado, y una sugerencia de día y horario. Si la cita sugerida no te sirve, avísanos e intentaremos encontrar otra opción que se ajuste a tu calendario.</p>
+		</div>
 	
 	</section>
 	
@@ -280,7 +309,7 @@
     });
 	</script>
 
-
+<script src="js/lightbox-plus-jquery.min.js"></script>
 	
 </body>
 </html>
