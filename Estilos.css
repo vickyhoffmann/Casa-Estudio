@@ -316,7 +316,7 @@ flex-direction: column;
 }
 
 
-/* Estilos para el modal */
+
 .modal {
   display: none; 
   position: fixed; 
@@ -325,19 +325,25 @@ flex-direction: column;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
+
 .modal-content {
-  background-color: #fff;
-  color: #333;
-  margin: 10% auto; 
-  padding: 20px;
-  border-radius: 8px;
-  width: 90%;
-  max-width: 500px;
-  position: relative;
+    background-color: #fff;
+    color: #333;
+    margin: auto; 
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    top: 50%;
+    transform: translateY(-50%); 
+    position: relative;
+    justify-content: center;
 }
+
+
 
 .close {
   position: absolute;
@@ -387,6 +393,14 @@ flex-direction: column;
 .modal-content button:hover {
   background-color: #555;
 }
+
+textarea {
+    resize: none;
+}
+
+
+
+
 
 #cuidados {
   display: flex;
