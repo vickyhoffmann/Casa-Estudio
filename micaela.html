@@ -23,7 +23,6 @@
           <li><a href="index.html#artistas">Artistas</a></li>
 			<li><a href="index.html#reservas">Reservas</a></li>
 			<li><a href="index.html#cuidados">Cuidados</a></li>
-          <li><a href="index.html#faq">FAQ</a></li>
           <li><a href="index.html#pedíturno">Pedí Turno</a></li>
         </ul>
       </nav>
@@ -39,51 +38,51 @@
 	
 
 	<div>
-		<a href="Imágenes/tattoomanu1.jpg" data-lightbox="fotos">
-    		<img src="Imágenes/tattoomanu1.jpg" class="fotostattoos">
+		<a href="Imágenes/tattoomica1.jpg" data-lightbox="fotos">
+    		<img src="Imágenes/tattoomica1.jpg" class="fotostattoos">
 		</a>
 	</div>
 	
 	<div>
-		<a href="Imágenes/tattoomanu2.jpg" data-lightbox="fotos">
-			<img src="Imágenes/tattoomanu2.jpg"  class="fotostattoos">
+		<a href="Imágenes/tattoomica2.jpg" data-lightbox="fotos">
+			<img src="Imágenes/tattoomica2.jpg"  class="fotostattoos">
 		</a>
 		
 	</div>
 	
 	<div>
-		<a href="Imágenes/tattoomanu3.jpg" data-lightbox="fotos">
-			<img src="Imágenes/tattoomanu3.jpg"  class="fotostattoos">
+		<a href="Imágenes/tattoomica3.jpg" data-lightbox="fotos">
+			<img src="Imágenes/tattoomica3.jpg"  class="fotostattoos">
 		</a>
 	</div>
 	
 	<div>
-		<a href="Imágenes/tattoomanu4.jpg" data-lightbox="fotos">
-			<img src="Imágenes/tattoomanu4.jpg"  class="fotostattoos">
+		<a href="Imágenes/tattoomica4.jpg" data-lightbox="fotos">
+			<img src="Imágenes/tattoomica4.jpg"  class="fotostattoos">
 		</a>
 	</div>
 	
 	<div>
-		<a href="Imágenes/tattoomanu5.jpg" data-lightbox="fotos">
-			<img src="Imágenes/tattoomanu5.jpg"  class="fotostattoos">
+		<a href="Imágenes/tattoomica5.jpg" data-lightbox="fotos">
+			<img src="Imágenes/tattoomica5.jpg"  class="fotostattoos">
 		</a>
 	</div>
 	
 	<div>
-		<a href="Imágenes/tattoomanu6.jpg" data-lightbox="fotos">
-			<img src="Imágenes/tattoomanu6.jpg"  class="fotostattoos">
+		<a href="Imágenes/tattoomica6.jpg" data-lightbox="fotos">
+			<img src="Imágenes/tattoomica6.jpg"  class="fotostattoos">
 		</a>
 	</div>
 	
 	<div>
-		<a href="Imágenes/tattoomanu7.jpg" data-lightbox="fotos">
-			<img src="Imágenes/tattoomanu7.jpg"  class="fotostattoos">
+		<a href="Imágenes/tattoomica7.jpg" data-lightbox="fotos">
+			<img src="Imágenes/tattoomica7.jpg"  class="fotostattoos">
 		</a>
 	</div>
 	
 	<div>
-		<a href="Imágenes/tattoomanu8.jpg" data-lightbox="fotos">
-			<img src="Imágenes/tattoomanu8.jpg"  class="fotostattoos">
+		<a href="Imágenes/tattoomica8.jpg" data-lightbox="fotos">
+			<img src="Imágenes/tattoomica8.jpg"  class="fotostattoos">
 		</a>
 	</div>
 		
@@ -127,5 +126,28 @@
 	</footer>
 	
 		<script src="js/lightbox-plus-jquery.min.js"></script>
+	
+	<script>
+		
+		window.addEventListener('scroll', function() {
+        const header = document.querySelector('header');
+        if (window.scrollY > 2) {
+            header.classList.add('barrafija');
+        } else {
+            header.classList.remove('barrafija');
+        }
+    });
+	</script>
+	
+	<script> 
+		function MiFuncion() {
+     	var x = document.getElementById("navegador");
+			if (x.className === "") {
+			x.className = "responsive";
+     } else {
+       x.className = "";
+     }
+   }
+	</script>
 </body>
 </html>

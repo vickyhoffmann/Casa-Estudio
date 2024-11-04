@@ -25,12 +25,15 @@
         display: flex;
         flex-flow: wrap;
         align-items: center;
-        background-color: #232323;
-        justify-content: space-around;
+        background-color: #333;
+        justify-content: center;
       }
+		
+		
       .logo img {
         height: 100px;
-        margin: 5px;
+		
+      
       }
 
       .botonanuncio {
@@ -42,40 +45,56 @@
         color: #FFFFFF;
       }
 		
+		.imagen{
+		   display: none;
+	  } 
 	
   @media (max-width: 727px) {
     .cajaanuncio {
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    flex-direction:column;
+    display: flex;
     align-content: center;
-    height: 100vh;
+   justify-content: center;
+	height: 89vh
   }
   .cajaanuncio h2 {
     font-size: 20px;
     width: auto;
-	 padding: 5px;
+	
   }
   .logo {
-    width: 20%;
-	 padding-right: 10px;
-	  
+    width: 100%;
+	 display: flex;
+	 justify-content: center;
+	
+
   }
   .botonanuncio {
-    font-size: 13px;
+    font-size: 35px;
+	  display: flex
   }
+	 
+	  .imagen{
+		    display: flex;
+    		border-radius: 20px;
+   			width: 90%;
+		  margin-top: 25px;
+	  } 
+	  
+	  
 	  
       }
     </style>
   </head>
 	
   <body class="cajaanuncio">
-    <h2>CASA ESTUDIO</h2>
       <a href="index.html" target="_blank" class="logo"><img src="Imágenes/logo.png" /></a>
 
     <a href="index.html" target="_blank" class="botonanuncio"
       >AGENDA YA TU CITA!
     </a>
+	  
+	  <img src="Imágenes/fotoemail2.jpg" class="imagen">
 
   </body>
 </html>

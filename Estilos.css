@@ -15,40 +15,56 @@ body{ font-family: "Noto Sans";
 
 header { 
 	text-align: left;
-    color: #FFFFFF;
+    top: 0;
+    width: 100%;
+    display: flex;
     background-color: #111111;
-    height: 50px;
-    background-size: 100% 100%;
-    display: flex;
-    justify-content: space-between;
+	justify-content: center;
     align-items: center;
-	padding: 10px;}
-
-
-
- 
-.logo {width: 160px;
-	padding-left: 120px;
-	display: flex;
-    align-items: center;
+	min-height: inherit;
+	height: auto; 
+    background-size: 100%;
+	flex-wrap: wrap;
 }
+
+ .barrafija {
+    text-align: left;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    background-color: #111111;
+	justify-content: center;
+    align-items: center;
+	min-height: inherit;
+	height: 70px; 
+    background-size: 100%;
+	z-index: 10;
+
+	}
+	
+.logo { width: 160px;
+	
+}
+
+
+
 .icono {color: #FFFFFF;
-	padding-left: 60px;
-    font-size: 22px; 
-    padding-right: 20px; 
-    display: flex;
-    align-items: center;
+    position: absolute;
+    right: 10px;
+    font-size: 30px;
 }
-.icono i {display: inline-block;
+.fa { display: inline-block;
+
 }
 
 
-nav { height: 0; 
-	overflow: hidden; 
-	align-content: center
+nav { display:none; 
+	overflow: hidden;
 }
-.responsive {height: 20vh; 
+.responsive { 
 	         transition: all 0.7s;
+			 display: block;
 }
 
 nav ul {
@@ -57,22 +73,20 @@ nav ul {
     margin: 5;
 	text-align: center;
 }
+
+
 nav ul li {
     display: inline-block; 
-    margin-right: 10px;
-
 }
-nav ul li a {
-    color: #FFFFFF; 
-    border: 1px solid #111111;
+
+nav ul li a { 
+	color: #FFFFFF; 
+   
     text-decoration: none;
     padding: 10px;
     display: block;
-    text-align: center;
+    text-align: center;	
 }
-
-
-
 
 
 
@@ -122,10 +136,10 @@ nav ul li a {
 
 
 .gristexto {color: #FFFFFF; text-align:justify; font-family: "Noto Sans"; font-size: 18px; line-height: 1.9; margin: 20px;}
-.gris{color: #FFFFFF; text-align:center; margin: 70px 20px 5px 20px; font-size: 50px;}
+h1.gris{color: #FFFFFF; text-align:center; margin: 15px 0px 35px 0px; font-size: 40px; line-height: 1.3}
 
-h1 { text-align:center; color:#333333; margin: 70px 20px 5px 20px; font-size: 50px; }
-h2 { text-align:left; color:#333333; margin: 20px; }
+h1 { text-align:center; color:#333333; margin: 15px 0px 5px 0px; font-size: 40px; line-height: 1.3}
+h2 { text-align:left; color:#333333; margin: 0px 0px 0px 35px; }
 .p1{text-align:center; 
 	color:#333333; 
 	font-family: "Noto Sans"; 
@@ -135,7 +149,7 @@ h2 { text-align:left; color:#333333; margin: 20px; }
 
 }
 .p2{text-align:justify; color:#333333; font-family: "Noto Sans"; font-size: 20px; line-height: 1.9; margin: 20px; }
-.p3{text-align:left; color:#333333; font-family: "Noto Sans"; font-size: 20px; line-height: 1; margin: 20px; }
+.p3{text-align:left; color:#333333; font-family: "Noto Sans"; font-size: 20px; line-height: 1; margin: 5px 0px 30px 35px; }
 
 
 
@@ -223,6 +237,8 @@ flex-direction: column;
   justify-content: center;
 	align-content: center;
 	padding-left: 58px;
+	padding-bottom: 5px;
+	padding-top: 10px;
 }
 
 .cajacontanuncio {
@@ -236,7 +252,7 @@ flex-direction: column;
 
 
 
-.reservas{background-color: #333333; }
+.reservas{background-color: #333333; height: auto;}
 
 
 
@@ -244,19 +260,19 @@ flex-direction: column;
 	 position: relative;
     		background: #000;
     		border-radius: 20px;
-   			width: 100%;
+   			width: 90%;
     		overflow: hidden;
-    		margin: auto;
+			margin: 21px;
 }
 
 .fotoartistas{
-			width: 100%;
+			width: 90%;
 		    position: relative;
     		background: #000;
     		border-radius: 20px;
    			box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
     		overflow: hidden;
-    		margin: auto;
+    		margin-left: 21px;
 	}
 
 
@@ -291,6 +307,125 @@ flex-direction: column;
 }
 
 	
+.numeroguia{
+	position: absolute;
+  left: 30px;
+  font-size: 3.5em;
+  color: rgba(90,90,90,0.37);
+  z-index: 1;
+}
+
+
+/* Estilos para el modal */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 100; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+}
+
+.modal-content {
+  background-color: #fff;
+  color: #333;
+  margin: 10% auto; 
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 25px;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #000;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.modal-content input,
+.modal-content textarea {
+  margin-top: 5px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.modal-content button {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-content button:hover {
+  background-color: #555;
+}
+
+#cuidados {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+	padding: 20px;}
+	
+	
+
+#reservas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background-color: #333333;
+}
+
+
+
+.boton-modal {
+  background-color: white;
+  color: #333;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 45px auto;
+  display: block;
+}
+
+
+.boton-modal:hover {
+  background-color: white;
+}
 
 
 
@@ -298,6 +433,16 @@ flex-direction: column;
 
 
 @media(min-width:1024px){
+	
+	
+	header {display: flex; 
+		align-items: center; 
+		justify-content: space-between;
+		flex-wrap: nowrap;
+	}
+	
+	
+	
     nav {display: block; 
 		height: auto; 
 		padding-top: 5px;
@@ -320,7 +465,7 @@ flex-direction: column;
 	justify-content: space-between;
     align-items: center;
 	min-height: inherit;
-	height: 50px; 
+	height: 70px; 
     background-size: 100%;
 	z-index: 10;
 
@@ -356,12 +501,6 @@ flex-direction: column;
 		
 	}
 	
-	
-	
-	
-	header {display: flex; 
-		align-items: center; 
-		justify-content: space-between;}
 
 	.slider {
     width: 100%;
@@ -373,25 +512,72 @@ flex-direction: column;
     height: 90px;
 	object-fit: cover;
 	justify-content: center;
-		padding-left: 260px
+	padding-left: 260px
 	}
 	
 	
 
 	
+	.fotoartistas{
+			width: 100%;
+		    position: relative;
+    		background: #000;
+    		border-radius: 20px;
+   			box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    		overflow: hidden;
+		margin: auto;}
 	
+	
+
+	
+	#reservas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
+  padding: 20px;
+  background-color: #333333;
+ height: 110vh;
 }
 	
-
-
-	
-	
-	
-
-
-
-	.logo {width: 180px; padding: 5px; padding-left: 160px
+	.boton-modal {
+  background-color: white;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  display: block;
 }
+
+
+.boton-modal:hover {
+  background-color: white;
+}
+
+	
+	
+	
+	#cuidados {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra el contenido verticalmente */
+  align-items: center; /* Centra el contenido horizontalmente */
+  text-align: center;
+  padding: 20px;
+	height: 110vh;
+}
+	
+	
+	
+	
+		
+	
+	
+	
+}
+
 	
 
 

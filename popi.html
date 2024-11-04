@@ -23,7 +23,6 @@
           <li><a href="index.html#artistas">Artistas</a></li>
 			<li><a href="index.html#reservas">Reservas</a></li>
 			<li><a href="index.html#cuidados">Cuidados</a></li>
-          <li><a href="index.html#faq">FAQ</a></li>
           <li><a href="index.html#pedíturno">Pedí Turno</a></li>
         </ul>
       </nav>
@@ -124,5 +123,28 @@
 	</footer>
 	
 		<script src="js/lightbox-plus-jquery.min.js"></script>
+	
+	<script>
+		
+		window.addEventListener('scroll', function() {
+        const header = document.querySelector('header');
+        if (window.scrollY > 2) {
+            header.classList.add('barrafija');
+        } else {
+            header.classList.remove('barrafija');
+        }
+    });
+	</script>
+	
+	<script> 
+		function MiFuncion() {
+     	var x = document.getElementById("navegador");
+			if (x.className === "") {
+			x.className = "responsive";
+     } else {
+       x.className = "";
+     }
+   }
+	</script>
 </body>
 </html>
