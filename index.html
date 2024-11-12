@@ -44,8 +44,8 @@
           <img src="Imágenes/banner5.jpg"  alt="Slide 5" class= "slide1"/>
 			
         </div>
-        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        <button class="prev" onclick="plusDivs(-1)">&#10094;</button>
+		<button class="next" onclick="plusDivs(1)">&#10095;</button>
       </div>
 		
 		<script>
@@ -94,7 +94,7 @@
 	</section>
 	
 	
-	<section id="artistas">
+	<section id="artistas" style="padding-top: 40px">
 	
 		<h1>Artistas</h1>
     <div class= "cajacontenedora">
@@ -169,7 +169,7 @@
 	</section>
 	
 	
-	<section id="reservas">
+	<section id="reservas" style="padding-top: 60px">
 		
 		<h1 class="gris"> Antes de Reservar</h1>
 		
@@ -194,22 +194,22 @@
 	
 		
 		<script>
-  // Obtener el modal y el botón para abrirlo
+  
   var modal = document.getElementById("turnoModal");
-  var botonReserva = document.getElementById("botonReserva"); // Botón nuevo
+  var botonReserva = document.getElementById("botonReserva");
   var span = document.getElementsByClassName("close")[0];
 
-  // Mostrar el modal cuando el usuario hace clic en el botón
+
   botonReserva.onclick = function() {
     modal.style.display = "block";
   }
 
-  // Cerrar el modal cuando el usuario hace clic en la 'x'
+ 
   span.onclick = function() {
     modal.style.display = "none";
   }
 
-  // Cerrar el modal al hacer clic fuera del contenido del modal
+  
   window.onclick = function(event) {
     if (event.target == modal) {
       modal.style.display = "none";
@@ -223,7 +223,7 @@
 	</section>
 	
 	
-	<section id="cuidados">
+	<section id="cuidados" style="padding-top: 30px">
 	
 		<h1> Cuidados posteriores </h1>
 		
@@ -313,49 +313,51 @@
 	
 	
 	
-	<!-- Modal de Reserva -->
+	
 <div id="turnoModal" class="modal">
   <div class="modal-content">
     <span class="close">&times;</span>
     <h2>Reserva tu Turno</h2>
     <p>Completa el formulario para que podamos coordinar tu cita.</p>
-    <form action="ruta_a_tu_script_de_reserva" method="POST">
-      <label for="nombre">Nombre</label>
-      <input type="text" id="nombre" name="nombre" required>
+    <form action="respuesta.html" method="POST">
+  <label for="nombre">Nombre</label>
+  <input type="text" id="nombre" name="nombre" required>
 
-      <label for="email">Correo Electrónico</label>
-      <input type="email" id="email" name="email" required>
+  <label for="email">Correo Electrónico</label>
+  <input type="email" id="email" name="email" required>
 
-      <label for="fecha">Fecha de Preferencia</label>
-      <input type="date" id="fecha" name="fecha" required>
+  <label for="fecha">Fecha de Preferencia</label>
+  <input type="date" id="fecha" name="fecha" required>
 
-      <label for="comentarios">Comentarios</label>
-      <textarea id="comentarios" name="comentarios" rows="4" placeholder="Describe tu idea o preferencias"></textarea>
+  <label for="comentarios">Comentarios</label>
+  <textarea id="comentarios" name="comentarios" rows="4" placeholder="Describe tu idea o preferencias"></textarea>
 
-      <button type="submit">Enviar Reserva</button>
-    </form>
+  <button type="submit">Enviar Reserva</button>
+</form>
+
+    
   </div>
 </div>
 
 	
 	<script>
-  // Obtener el modal, el botón y el elemento de cierre
+
   var modal = document.getElementById("turnoModal");
   var btn = document.querySelector("a[href='#pedíturno']");
   var span = document.getElementsByClassName("close")[0];
 
-  // Mostrar el modal cuando el usuario hace clic en "Pedí Turno"
+ 
   btn.onclick = function(event) {
-    event.preventDefault(); // Evita el desplazamiento de anclaje
+    event.preventDefault();
     modal.style.display = "block";
   }
 
-  // Cerrar el modal cuando el usuario hace clic en la 'x'
+ 
   span.onclick = function() {
     modal.style.display = "none";
   }
 
-  // Cerrar el modal al hacer clic fuera del contenido del modal
+  
   window.onclick = function(event) {
     if (event.target == modal) {
       modal.style.display = "none";
