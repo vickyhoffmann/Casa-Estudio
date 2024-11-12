@@ -425,21 +425,41 @@ textarea {
 .boton-regreso {
     font-family: "Noto Sans";
     font-size: 18px;
-    background-color: #333333; /* Fondo oscuro */
+    background-color: #333333; 
     color: #FFFFFF;
     padding: 10px 20px;
     border: none;
-    border-radius: 30px; /* Bordes redondeados */
+    border-radius: 30px; 
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 .boton-regreso:hover {
-    background-color: #555555; /* Fondo más claro al pasar el mouse */
+    background-color: #555555; 
 }
 
 
 
+
+.boton-presentacion {
+    display: block;                
+    margin: 0 auto 10px;           
+    padding: 8px 16px;             
+    background-color: #FFFFFF;     
+    color: #333333;                
+    font-size: 1em;               
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid #BBBBBB;     
+    width: fit-content;           
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.boton-presentacion:hover {
+    background-color: #333333;     
+    color: #FFFFFF;               
+}
 
 
 
