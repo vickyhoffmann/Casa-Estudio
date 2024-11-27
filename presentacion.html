@@ -58,7 +58,7 @@
         text-align: left;
     }
 
-    /* Estilo para cada color y su texto alineados verticalmente */
+    
     .color-item {
         display: flex;
         align-items: center;
@@ -76,11 +76,12 @@
     .color3 { background-color: #111111; }
     .color4 { background-color: #BBBBBB; }
 	
-	.itemscolores{display: flex;               /* Activar el uso de flexbox */
-    justify-content: center;     
-    align-items: center;        
+	.itemscolores{display: flex;              
+    justify-content: left;     
+    align-items: left;        
     height: 100%;               
-    flex-direction: column;      
+    flex-direction: column;
+	margin-left: 120px;
     }
 	
 	
@@ -127,16 +128,16 @@
     }
 	
 	 .desarrollo, .desarrollo2 {
-        max-width: 60%; /* En dispositivos móviles, ambas ocupan todo el ancho */
+        max-width: 60%; 
     }
 }
 
 
 	.imgdiapo2 {
-    width: 70%; /* Puedes ajustar el valor según prefieras */
-    max-width: 370px; /* Limita el ancho máximo para que no sea demasiado grande */
-    height: auto; /* Mantiene la proporción de la imagen */
-    border-radius: 8px; /* Opcional: bordes redondeados */
+    width: 70%;
+    max-width: 370px;
+    height: auto;
+    border-radius: 8px;
     margin-bottom: 15px;
 	margin-top: 15px;
 }
@@ -146,17 +147,17 @@
     display: inline-block;
     margin-top: 15px;
     padding: 10px 20px;
-    background-color: #333333; /* Color de fondo */
-    color: #FFFFFF; /* Color de texto */
+    background-color: #333333; 
+    color: #FFFFFF; 
     font-size: 1.1em;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-    border: 2px solid #BBBBBB; /* Opcional: borde para el botón */
+    border: 2px solid #BBBBBB; 
 }
 
 .boton-visitar:hover {
-    background-color: #555555; /* Color de fondo al pasar el cursor */
+    background-color: #555555; 
 }
 
 	
@@ -208,15 +209,15 @@
         <p>El diseño busca transmitir la identidad artística y profesional de Casa Estudio. Se prioriza una interfaz minimalista y fácil de navegar para mejorar la experiencia del usuario. El propósito del sitio es facilitar el servicio y la comunicación entre el cliente y el tatuador del estudio.</p>
     </div>
 
-    <!-- Diapositiva 2: Nombre del sitio -->
+   
     <div class="diapositiva">
-         <!-- Cuadro independiente para Tipografía -->
+       
         <div class="tipografia">
             <h1>Tipografía</h1>
             <p>Noto Sans</p>
         </div>
 
-        <!-- Cuadro independiente para Gama de Colores -->
+   
         <div class="colores">
             <h1>Colores</h1>
 		<div class="itemscolores">
